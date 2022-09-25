@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96C7AA"
+    tools:context=".ResultFragment">
+
+    <ImageView
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="44dp"
+        android:src="@drawable/restartbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/resultimage"
+        android:layout_width="288dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="116dp"
+        android:background="#CF9E2B"
+        android:backgroundTint="#CF9E2B"
+        android:src="@drawable/winlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="356dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/edittext"
+        android:fontFamily="@font/allerta_stencil"
+        android:gravity="center"
+        android:text="You win !"
+        android:textColor="#77A88B"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultimage" />
+
+    <TextView
+        android:id="@+id/textViewHak"
+        android:layout_width="305dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Addim : "
+        android:textColor="#C3EAC9"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
